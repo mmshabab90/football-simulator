@@ -1,0 +1,10 @@
+<div class="flex">
+    <div class="flex-1 p-2 h-screen maxw-md">
+        <GameResults @games = {{ this.gameSimulator.games }} />
+    </div>
+
+    <div class="flex-1 p-2 h-screen">
+        <LeagueTable @games = {{ this.gameSimulator.games }} 
+        @teams = {{ this.gameSimulator.teams }} />
+    </div>
+</div>
